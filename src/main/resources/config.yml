@@ -1,0 +1,72 @@
+# Reality SMP Configuration
+
+# General Settings
+settings:
+  currency-symbol: "$"
+
+# Hospital Location (where players are sent when they faint)
+hospital:
+  world: "world"
+  x: 0
+  y: 64
+  z: 0
+  yaw: 0
+  pitch: 0
+
+# Jail Location
+jail:
+  world: "world"
+  x: 100
+  y: 64
+  z: 100
+  yaw: 0
+  pitch: 0
+
+# Job Settings
+jobs:
+  police:
+    base-salary: 150
+    salary-interval: 60 # minutes
+    uniform-items:
+      - "LEATHER_HELMET"
+      - "LEATHER_CHESTPLATE:BLUE"
+  taxi:
+    base-salary: 80
+    salary-interval: 60
+    fare-per-block: 0.5
+  miner:
+    base-salary: 50
+    salary-interval: 60
+    block-rewards:
+      COAL_ORE: 2
+      IRON_ORE: 5
+      GOLD_ORE: 10
+      DIAMOND_ORE: 25
+  mechanic:
+    base-salary: 100
+    salary-interval: 60
+    repair-cost: 25
+  doctor:
+    base-salary: 130
+    salary-interval: 60
+    heal-cost: 50
+
+# Housing Settings
+housing:
+  rent-collection-interval: 1440 # minutes (24 hours)
+  eviction-grace-period: 3 # days
+  available-apartments:
+    apt1:
+      name: "Downtown Apartment"
+      price: 5000
+      rent: 100
+      world: "world"
+      door-x: 50
+      door-y: 64
+      door-z: 50
+
+# Tick Settings (how often stats decrease)
+tick-intervals:
+  mood: 5 # minutes
+  hygiene: 10 # minutes
+  energy: 8 # minutes

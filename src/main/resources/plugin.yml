@@ -1,0 +1,121 @@
+name: RealitySMP
+version: 1.0
+main: me.ash.realitySMP.RealitySMP
+
+api-version: 1.19
+depend: [Vault]
+commands:
+  atm:
+    description: Access your bank account
+    usage: /atm <deposit|withdraw> <amount>
+  buyhome:
+    description: Buy a home
+    usage: /buyhome <home-id>
+  cancellease:
+    description: Cancel your apartment lease
+    usage: /cancellease
+  pay:
+    description: Send money to another player
+    usage: /pay <player> <amount>
+  phone:
+    description: Use your phone
+    usage: /phone [app]
+  balance:
+    description: Check your bank account balance
+    usage: /balance [player]
+    aliases: [ bal, money ]
+  job:
+    description: Manage your job
+    usage: /job [list|join <job>|quit]
+  cuff:
+    description: Handcuff a player if you're police
+    usage: /cuff <player>
+  id:
+    description: Manage your ID card
+    usage: /id [set <field> <value>|show [player]]
+  jail:
+    description: Send a player to jail
+    usage: /jail <player> <time>
+  home:
+    description: Teleport to your home
+    usage: /home
+  confirmbuyhome:
+    description: Confirm buying a home
+    usage: /confirmbuyhome
+  confirmrenthome:
+    description: Confirm renting a home
+    usage: /confirmrenthome
+  confirmsellhome:
+    description: Confirm selling your home
+    usage: /confirmsellhome
+  mystats:
+    description: View your personal stats
+    usage: /mystats
+
+  # Tab list and Leaderboard commands
+  tablist:
+    description: Configure your tablist display
+    usage: /tablist [style|toggle|colors]
+  leaderboard:
+    description: View server leaderboards
+    usage: /leaderboard [money|jobs|arrests|playtime]
+    aliases: [lb, top]
+  scorecard:
+    description: View your personal scorecard with stats
+    usage: /scorecard [player]
+    aliases: [sc, card]
+
+  # Admin commands
+  realitysmp:
+    description: Main admin command for RealitySMP
+    usage: /realitysmp [reload|debug|help]
+    aliases: [rsmp, rsadmin]
+  resetstats:
+    description: Reset player statistics (admin only)
+    usage: /resetstats <player> [stat]
+
+  # Economy and jobs commands
+  salary:
+    description: Check when your next salary payment is due
+    usage: /salary
+  withdraw:
+    description: Withdraw money from your account
+    usage: /withdraw <amount>
+  deposit:
+    description: Deposit money into your account
+    usage: /deposit <amount>
+
+  # Police and crime commands
+  ticket:
+    description: Issue a ticket to a player
+    usage: /ticket <player> <amount> <reason>
+  wanted:
+    description: View or set wanted players
+    usage: /wanted [add|remove|list] [player] [reason]
+
+  # Social commands
+  call:
+    description: Call another player using your phone
+    usage: /call <player>
+  text:
+    description: Send a text message to another player
+    usage: /text <player> <message>
+
+  # Housing commands
+  rent:
+    description: Rent a property
+    usage: /rent <property-id>
+  sellhome:
+    description: Put your home up for sale
+    usage: /sellhome <price>
+
+  # Hygiene and energy commands
+  shower:
+    description: Take a shower to refresh hygiene
+    usage: /shower
+  sleep:
+    description: Sleep to regain energy
+    usage: /sleep
+  eat:
+    description: Eat food to restore hunger and get buffs
+    usage: /eat <food-item>
