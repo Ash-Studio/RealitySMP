@@ -1,4 +1,3 @@
----
 
 # 🏙️ RealitySMP - Real Life Simulator in Minecraft
 
